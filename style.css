@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Exer-1 gr3
+theme name: Exer-1 gr3 version
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -515,6 +515,28 @@ COMPOSANTES
   padding: 15px;
 }
 
+.site__footer__info1 {
+  display: flex;
+  justify-content: center;
+}
+
+.site__footer .elem {
+  width: 20%;
+  border: 1px solid #fff;
+}
+
+.site__footer .elem__h2 {
+  background-color: salmon;
+}
+
+.site__footer .elem__h3 {
+  background-color: salmon;
+}
+
+.site__footer .elem__p {
+  background-color: palevioletred;
+}
+
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
@@ -532,7 +554,15 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu-item a svg {
-  color: aqua;
+  color: #f40b0b;
+}
+
+.site__footer__menu__ul .menu-item a:visited svg {
+  color: #19e123;
+}
+
+.site__footer__menu__ul .menu-item a:hover svg {
+  color: #19e123;
 }
 
 .footer__titre,
