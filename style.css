@@ -1,6 +1,13 @@
 @charset "UTF-8";
-/*
-theme name: Exer-1 gr3 version
+/**
+Theme name: lab4 Danishcar Casimir (version en classe)
+Author: Danishcar Casimir 
+Author: URI: https://github.com/Danishcar/4W4-gr1
+Description: Exercice dans le cadre du cours 4W4
+Version: 1.0
+Requires PHP: 7.0
+License: GNU General Public License v2 or later
+Text Domain: cidw-4w4
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -448,16 +455,28 @@ COMPOSANTES
   background-color: #594036;
   color: #fa9292;
   padding-left: 10px;
+  display: flex;
+  align-items: center;
 }
 
-.site__header .header__titre {
+.header__titre {
   font-size: 3em;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
+.header__description {
   font-size: 1.5rem;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.util {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.util__menu {
+  display: flex;
 }
 
 #burger {
@@ -468,6 +487,10 @@ COMPOSANTES
 
 #chk-burger:checked ~ #burger {
   transform: rotate(90deg);
+}
+
+#chk-burger {
+  display: none;
 }
 
 .menu-principal-container {
@@ -570,6 +593,26 @@ COMPOSANTES
 .footer__author {
   color: #ffcabc;
   text-align: center;
+}
+
+.erreur-404 {
+  background-color: #850707;
+}
+
+h1 {
+  color: #f7e7e7;
+}
+
+h2 {
+  color: #f7e7e7;
+}
+
+p {
+  color: #f7e7e7;
+}
+
+.cours__titre {
+  color: #ff00b3;
 }
 
 /* ---------------------------------------------------------
