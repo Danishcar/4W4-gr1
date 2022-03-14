@@ -1,5 +1,5 @@
 /**
-Theme name: lab4 Danishcar Casimir (version en classe)
+Theme name: TP1 Danishcar Casimir (version en classe)
 Author: Danishcar Casimir 
 Author: URI: https://github.com/Danishcar/4W4-gr1
 Description: Exercice dans le cadre du cours 4W4
@@ -34,8 +34,12 @@ COMPOSANTES
 @import "composantes/navigation";
 @import "composantes/footer";
 @import "composantes/erreur_404";
-@import "composantes/single-post";
 @import "composantes/recherche";
+@import "composantes/single-post";
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */

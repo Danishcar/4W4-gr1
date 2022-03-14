@@ -1,11 +1,15 @@
-.cours{
-    &__titre{
-        color: rgb(255, 0, 179);
+.cours {
+
+
+    &__titre {
+        color : #f00;
     }
 
     section{
+        display : flex;
         img{}
 
         p{}
+
     }
 }

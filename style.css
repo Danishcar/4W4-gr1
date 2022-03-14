@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /**
-Theme name: lab4 Danishcar Casimir (version en classe)
+Theme name: TP1 Danishcar Casimir (version en classe)
 Author: Danishcar Casimir 
 Author: URI: https://github.com/Danishcar/4W4-gr1
 Description: Exercice dans le cadre du cours 4W4
@@ -15,6 +15,7 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- LIENS FOOTER */
+/* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
@@ -384,25 +385,44 @@ a:hover, a:active {
   outline: 0;
 }
 
+.header__titre a {
+  color: #f06a6a;
+}
+
+.header__titre a:visited {
+  color: #7a49d4;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #8be58f;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.principal {
-  margin: 20px;
-  padding: 10px 15px;
-  background-color: #eca7a7;
+.site__main {
+  background-color: #d5e6f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation {
+  padding: 10px 15px;
   display: flex;
   flex-direction: column;
 }
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: #ebcac1;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -413,7 +433,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
+  background-color: #d1e9ff;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -437,7 +457,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #ebcac1;
   margin: 5px 0px;
 }
 
@@ -452,8 +472,8 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #594036;
-  color: #fa9292;
+  background-color: #6faee2;
+  color: #040629;
   padding-left: 10px;
   display: flex;
   align-items: center;
@@ -485,12 +505,12 @@ COMPOSANTES
   transform: rotate(0);
 }
 
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
-}
-
 #chk-burger {
   display: none;
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
 }
 
 .menu-principal-container {
@@ -516,11 +536,11 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #ffa3a3;
+  background-color: #8293e3;
 }
 
 .menu-item a:hover {
-  background-color: #ffd1d1;
+  background-color: #2832b8;
 }
 
 @media screen and (min-width: 800px) {
@@ -534,85 +554,142 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
+  background-color: #07143b;
+  color: #f1f2f8;
   padding: 15px;
 }
 
-.site__footer__info1 {
+.site__footer__colonne {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 
-.site__footer .elem {
-  width: 20%;
-  border: 1px solid #fff;
+.site__footer__colonne section {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #aaa;
+  flex: 0 0 30%;
 }
 
-.site__footer .elem__h2 {
-  background-color: salmon;
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.site__footer .elem__h3 {
-  background-color: salmon;
-}
-
-.site__footer .elem__p {
-  background-color: palevioletred;
-}
-
-.site__footer__menu__ul {
+.site__footer__ligne .footer__menu__nav__ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
 }
 
-.site__footer__menu__ul .menu-item {
+.site__footer__ligne .footer__menu__nav__ul .menu-item {
   margin: 10px 5px;
 }
 
-.site__footer__menu__ul .menu-item a {
+.site__footer__ligne .footer__menu__nav__ul .menu-item a {
   display: flex;
   align-items: center;
   padding: 3px;
 }
 
-.site__footer__menu__ul .menu-item a svg {
+.site__footer__ligne .footer__menu__nav__ul .menu-item a svg {
   color: #f40b0b;
 }
 
-.site__footer__menu__ul .menu-item a:visited svg {
+.site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
   color: #19e123;
 }
 
-.site__footer__menu__ul .menu-item a:hover svg {
-  color: #19e123;
-}
+/*
+
+.site__footer {
+    font-family: $font__titre;
+    background-color: $color__background-footer;
+    padding: 15px;
+
+
+  }
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: $color__font-footer;
   text-align: center;
 }
-
+*/
 .erreur-404 {
-  background-color: #850707;
+  background-color: #b95f85;
 }
 
-h1 {
-  color: #f7e7e7;
+.erreur-404 h1 {
+  font-size: 5rem;
 }
 
-h2 {
-  color: #f7e7e7;
+.erreur-404 h2 {
+  font-size: 2rem;
 }
 
-p {
-  color: #f7e7e7;
+.erreur-404 p {
+  font-size: 1rem;
 }
 
 .cours__titre {
-  color: #ff00b3;
+  color: #f00;
+}
+
+.cours section {
+  display: flex;
+}
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #1161f7;
+  color: #fff;
+  font-size: 3rem;
+  transform: translateY(-100vh);
+}
+
+.animation__bloc:nth-of-type(1) {
+  animation: anim-entete 1s 0s forwards;
+}
+
+.animation__bloc:nth-of-type(2) {
+  animation: anim-entete 1s .25s forwards;
+}
+
+.animation__bloc:nth-of-type(3) {
+  animation: anim-entete 1s .5s forwards;
+}
+
+.animation__bloc:nth-of-type(4) {
+  animation: anim-entete 1s .75s forwards;
+}
+
+.animation__bloc:nth-of-type(5) {
+  animation: anim-entete 1s 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 /* ---------------------------------------------------------
@@ -622,40 +699,42 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #957365;
+  background-color: #dae0f1;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #6faee2;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #051d29;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #d5e6f1;
+  padding: 10px 15px 10px 15px;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #07143b;
 }
 
 .site {
   display: grid;
+  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
 @media screen and (min-width: 800px) {
   .site {
-    grid-template-columns: 300px auto;
-    grid-template-areas: "header header" "sidebar main" "footer footer";
+    grid-template-columns: auto 300px;
+    grid-template-areas: "header header" " main sidebar" "footer footer";
   }
 }
 /*# sourceMappingURL=style.css.map */
