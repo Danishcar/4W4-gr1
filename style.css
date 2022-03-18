@@ -705,6 +705,7 @@ COMPOSANTES
 */
 .erreur-404 {
   background-color: #8b04b4;
+  text-align: center;
 }
 
 .erreur-404 h1 {
@@ -712,11 +713,12 @@ COMPOSANTES
 }
 
 .erreur-404 h2 {
-  font-size: 2rem;
+  font-size: 7rem;
+  animation: anim-jinx-404 800ms both;
 }
 
 .erreur-404 p {
-  font-size: 1rem;
+  font-size: 3rem;
 }
 
 .cours__titre {
@@ -780,6 +782,25 @@ ANIMATION
   }
   100% {
     transform: translateY(0);
+  }
+}
+
+@keyframes anim-jinx-404 {
+  0% {
+    transform: translate(0vw, 20vh) rotate(45deg) scale(8);
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.63, 0, 1, 0.17);
+  }
+  60% {
+    transform: translate(10vw, -5vh) rotate(0deg) scale(0.3);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.01, 0.47, 0.13, 0.98);
+  }
+  95% {
+    transform: translate(0, 0) rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
   }
 }
 

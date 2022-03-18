@@ -1,12 +1,14 @@
 .erreur-404{
     background-color: $color__background-404;
+    text-align: center;
     h1{
         font-size: 5rem;
     }
     h2{
-        font-size: 2rem;
+        font-size: 7rem;
+        animation: anim-jinx-404 800ms both;
     }
     p{
-        font-size: 1rem;
+        font-size: 3rem;
     }
 }
