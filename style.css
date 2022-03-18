@@ -642,6 +642,12 @@ COMPOSANTES
   display: flex;
 }
 
+.animation__bloc:hover {
+  width: 150px;
+  height: 150px;
+  background-color: purple;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
