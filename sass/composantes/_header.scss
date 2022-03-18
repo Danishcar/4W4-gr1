@@ -22,7 +22,9 @@
   .header__description {
     font-size: 1.5rem;
     font-family: $font__main;
+    color: rgb(255, 108, 132);
     font-size: clamp(0.7rem, 3vw, 2rem);
+    animation: anim-bettement-coeur 1s ease-in-out  infinite alternate ;
 }
 
 .util {
