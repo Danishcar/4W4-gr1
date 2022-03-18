@@ -38,11 +38,13 @@
       display: flex;
     flex-wrap: nowrap;
     margin-bottom: 10px; 
+    justify-content: space-between;
     //lien des icones
     &__lien{
       margin-right: 0.1rem;
       svg{
           color: $color__texte__icones;
+          animation: stretch 2s ease-out  infinite alternate running; 
       }
   }
     }

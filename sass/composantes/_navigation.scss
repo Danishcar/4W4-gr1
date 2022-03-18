@@ -36,6 +36,7 @@
         background-color: $color__background-link;
         &:hover {
             background-color: $color__background-link-hover;
+            animation: shake  0.5s infinite;
         }
     }
 }
