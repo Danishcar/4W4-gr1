@@ -12,10 +12,10 @@
 #chk-burger:checked ~ #burger {
     transform : rotate(90deg);
 }
-.menu-principal-container {
+.menu-principale-container {
     display : none;
 }
-#chk-burger:checked ~ .menu-principal-container{
+#chk-burger:checked ~ .menu-principale-container{
     display : block;
 }
 
