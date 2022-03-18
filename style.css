@@ -824,6 +824,26 @@ ANIMATION
   }
 }
 
+.formation__cours {
+  box-shadow: 0 0 0 0 rgba(75, 255, 246, 0.7);
+  animation: anim-formation-cours 2s infinite;
+}
+
+@keyframes anim-formation-cours {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(75, 255, 246, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+  }
+}
+
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
