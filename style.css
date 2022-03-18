@@ -611,6 +611,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
 }
 
 .site__footer__ligne .footer__menu__nav__ul {
