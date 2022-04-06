@@ -1,13 +1,14 @@
 @charset "UTF-8";
-/**
-Theme name: TP1 Danishcar Casimir (version en classe)
-Author: Danishcar Casimir 
-Author: URI: https://github.com/Danishcar/4W4-gr1
-Description: Exercice dans le cadre du cours 4W4
-Version: 1.0
-Requires PHP: 7.0
+/*
+theme name: groupe-1 eddy martin exo3 
+Author: Eddy martin
+Author URI: https://github.com/eddytuto
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
 License: GNU General Public License v2 or later
+License URI: LICENSE
 Text Domain: cidw-4w4
+
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -17,6 +18,7 @@ VARIABLES
 /* ---------------- LIENS FOOTER */
 /* ---------------- LIENS HEADER titre principal du site */
 /* ---------------- FONT */
+/*  -------------------   Titre */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -346,11 +348,11 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #00c0c7;
+  color: #7b5647;
 }
 
 a:visited {
-  color: #f500b8;
+  color: #5c4033;
 }
 
 a:hover, a:focus, a:active {
@@ -366,7 +368,7 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #5d0bf4;
+  color: #f40b0b;
 }
 
 .site__footer a:visited {
@@ -374,7 +376,7 @@ a:hover, a:active {
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #9384e6;
+  color: #19e123;
 }
 
 .site__footer a:focus {
@@ -386,7 +388,8 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #1ac9ff;
+  color: #f06a6a;
+  font-size: clamp(4rem, 2vw, 9rem);
 }
 
 .header__titre a:visited {
@@ -394,7 +397,7 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #d34588;
+  color: #8be58f;
 }
 
 .header__titre a:focus {
@@ -405,11 +408,64 @@ a:hover, a:active {
   outline: 0;
 }
 
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  color: rgba(8, 33, 175, 0.938);
+}
+
+h3, h4 {
+  font-family: "Poppins", sans-serif;
+  color: rgba(61, 86, 139, 0.938);
+}
+
+h5, h6 {
+  font-family: "Roboto", sans-serif;
+  color: rgba(68, 92, 173, 0.938);
+}
+
+p {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  color: #051752;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 5rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 2.2vw, 3rem);
+}
+
+h3 {
+  font-size: clamp(1.2rem, 2vw, 2.6rem);
+}
+
+h4 {
+  font-size: clamp(1.1rem, 2vw, 2.5rem);
+}
+
+h5 {
+  font-size: clamp(1rem, 2vw, 2.2rem);
+}
+
+h6 {
+  font-size: clamp(1rem, 1.5vw, 2rem);
+}
+
+p {
+  font-size: clamp(1rem, 1.5vw, 1.5rem);
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+  font-size: clamp(0.8rem, 1vw, 1.2rem);
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
-  background-color: #79b5dc;
+  background-color: #d5e6f1;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -421,10 +477,8 @@ COMPOSANTES
 }
 
 .formation__titre {
-  font-size: 2rem;
-  color: #c1e1eb;
+  color: #ebcac1;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .formation__liste {
@@ -432,7 +486,37 @@ COMPOSANTES
   flex-wrap: wrap;
 }
 
+.formation__liste .web {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=globe-bold");
+}
+
+.formation__liste .jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.formation__liste .comm {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=users");
+}
+
+.formation__liste .design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
+}
+
+.formation__liste .utilitaire {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
+}
+
+.formation__liste .video {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=device-camera-video");
+}
+
+.formation__liste .creation-3d {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=view_in_ar");
+}
+
 .formation__cours {
+  background-repeat: no-repeat;
+  background-position: 97% 3%;
   background-color: #d1e9ff;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
@@ -457,7 +541,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #c1e1eb;
+  color: #ebcac1;
   margin: 5px 0px;
 }
 
@@ -476,122 +560,182 @@ COMPOSANTES
   color: #040629;
   padding-left: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  justify-content: center;
   flex-direction: column;
-  justify-content: space-around;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .site__header {
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
   }
 }
 
+.site__header__titre {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.custom-logo-link, .header__titre, .header__description {
+  padding-left: 20px;
+}
+
 .header__titre {
-  font-size: 3em;
-  padding: 0 clamp(0.7rem, 2vw, 7rem) 0 0;
+  font-size: clamp(3rem, 4vw, 6rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: clamp(1.2rem, 4vw, 4rem);
 }
 
 .header__description {
-  font-size: 1.5rem;
+  font-size: clamp(2rem, 2vw, 4rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  color: #ff6c84;
-  font-size: clamp(0.7rem, 3vw, 2rem);
-  animation: anim-bettement-coeur 1s ease-in-out  infinite alternate;
 }
 
 .util {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  width: 90%;
+  text-align: center;
 }
 
-.util__menu {
-  display: flex;
-  flex-wrap: nowrap;
-  margin-bottom: 10px;
-  justify-content: space-between;
-}
-
-.util__menu__lien {
-  margin-right: 0.1rem;
-}
-
-.util__menu__lien svg {
-  color: #942b94;
-  animation: stretch 2s ease-out  infinite alternate running;
-}
-
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 700px) {
   .util {
-    min-width: 400px;
-    align-items: flex-end;
-    width: 25%;
-    flex-direction: row;
-  }
-  .util__menu {
-    margin-bottom: 0px;
-    margin: 0 auto;
-  }
-  .util .recherche {
-    margin-bottom: 0;
-    width: auto;
+    width: 300px;
+    margin-left: auto;
     margin-right: 20px;
   }
 }
 
-@media screen and (min-width: 1100px) {
-  .util {
-    flex-direction: row;
+.util__menu {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#burger {
+  position: absolute;
+  transition: transform .3s;
+  transform: rotate(0);
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+
+.menu-principal-container {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+}
+
+.menu-principal-container {
+  padding: 30px 0 0 0;
+  background-color: #8293e3;
+}
+
+.menu-principal-container .menu {
+  list-style-type: none;
+  margin: 0;
+}
+
+.menu-principal-container .menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-principal-container .menu-item a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+}
+
+.menu-principal-container .menu-item a:hover {
+  background-color: #2832b8;
+}
+
+@media screen and (min-width: 800px) {
+  .site #burger {
+    display: none;
+  }
+  .site .menu-principal-container {
+    display: block;
+  }
+  .home #burger {
+    display: block;
+  }
+  .home .menu-principal-container {
+    display: none;
   }
 }
 
-.recherche {
-  position: relative;
-  width: 80%;
-  margin-bottom: 20px;
-}
-
-.recherche__text {
-  height: 23px;
-  border: none;
-  outline: none;
-  font-style: italic;
-  background-color: #033464;
-  width: 100%;
-  border-radius: 5px;
-}
-
-.recherche__submit {
-  padding: 0;
-  background-color: #033464;
-  top: 0;
-  right: 0;
-  width: 23px;
-  height: 23px;
-  outline: none;
-  border: none;
-  position: absolute;
+.menu-accueil-container .menu {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
+  justify-content: space-around;
 }
 
-.recherche__submit svg {
-  color: #cad1d4;
-  width: 100%;
-  height: auto;
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
+}
+
+.menu-accueil-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 20%;
+  height: 175px;
+  border: 1px solid #aaa;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  height: 100%;
+  font-size: 2rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid #aaa;
+  margin-top: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/* --------------------------------------------------------------
+Navigation pour la page category.php   boutons de catégorie  groupe-1
+----------------------------------------------------------------- */
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 15px;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  text-decoration: none;
 }
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   background-color: #07143b;
-  color: #cad2ff;
+  color: #f1f2f8;
   padding: 15px;
 }
 
@@ -611,7 +755,6 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
 }
 
 .site__footer__ligne .footer__menu__nav__ul {
@@ -631,11 +774,11 @@ COMPOSANTES
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a svg {
-  color: #5d0bf4;
+  color: #f40b0b;
 }
 
 .site__footer__ligne .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #9384e6;
+  color: #19e123;
 }
 
 /*
@@ -656,8 +799,7 @@ COMPOSANTES
 }
 */
 .erreur-404 {
-  background-color: #8b04b4;
-  text-align: center;
+  background-color: #b95f85;
 }
 
 .erreur-404 h1 {
@@ -665,80 +807,55 @@ COMPOSANTES
 }
 
 .erreur-404 h2 {
-  font-size: 7rem;
-  animation: anim-jinx-404 800ms both;
+  font-size: 2rem;
 }
 
 .erreur-404 p {
-  font-size: 3rem;
+  font-size: 1rem;
+}
+
+.recherche {
+  display: flex;
+  border: 1px solid #aaa;
+  height: 30px;
+}
+
+.recherche__text {
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color .5s;
+  width: 100%;
+}
+
+.recherche__text:focus {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+@media screen and (min-width: 700px) {
+  .recherche__text {
+    width: 300px;
+  }
+}
+
+.recherche__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+}
+
+.recherche__submit svg {
+  color: #000;
 }
 
 .cours__titre {
-  color: #ff00ea;
+  color: #f00;
 }
 
 .cours section {
   display: flex;
-}
-
-.animation__bloc:hover {
-  width: 150px;
-  height: 150px;
-  background-color: purple;
-}
-
-#burger {
-  position: absolute;
-  transition: transform .3s;
-  transform: rotate(0);
-}
-
-#chk-burger {
-  display: none;
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
-}
-
-.menu-principale-container {
-  display: none;
-}
-
-#chk-burger:checked ~ .menu-principale-container {
-  display: block;
-}
-
-.menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-item {
-  margin: 0;
-  padding: 0;
-}
-
-.menu-item a {
-  display: block;
-  text-decoration: none;
-  padding: 4px;
-  background-color: #8293e3;
-}
-
-.menu-item a:hover {
-  background-color: #2832b8;
-  animation: shake  0.5s infinite;
-}
-
-@media screen and (min-width: 800px) {
-  #burger {
-    display: none;
-  }
-  .menu-principale-container {
-    display: block;
-  }
 }
 
 /* ---------------------------------------------------------
@@ -791,136 +908,41 @@ ANIMATION
   }
 }
 
-@keyframes stretch {
-  0% {
-    transform: scale(0.5);
-    border-radius: 100%;
-  }
-  50% {
-    background-color: #ff00d4;
-  }
-  100% {
-    transform: scale(2);
-  }
-}
-
-@keyframes anim-jinx-404 {
-  0% {
-    transform: translate(0vw, 20vh) rotate(45deg) scale(8);
-    opacity: 0;
-    animation-timing-function: cubic-bezier(0.63, 0, 1, 0.17);
-  }
-  60% {
-    transform: translate(10vw, -5vh) rotate(0deg) scale(0.3);
-    opacity: 1;
-    animation-timing-function: cubic-bezier(0.01, 0.47, 0.13, 0.98);
-  }
-  95% {
-    transform: translate(0, 0) rotate(0deg) scale(1.5);
-  }
-  100% {
-    transform: translate(0, 0) rotate(0deg) scale(1);
-  }
-}
-
-@keyframes anim-bettement-coeur {
-  0% {
-    opacity: 1;
-  }
-  14% {
-    opacity: 1;
-  }
-  28% {
-    opacity: 0;
-  }
-  42% {
-    opacity: 0;
-  }
-  70% {
-    opacity: 0;
-  }
-}
-
-.formation__cours {
-  box-shadow: 0 0 0 0 rgba(75, 255, 246, 0.7);
-  animation: anim-formation-cours 2s infinite;
-}
-
-@keyframes anim-formation-cours {
-  0% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(75, 255, 246, 0.7);
-  }
-  70% {
-    transform: scale(1);
-    box-shadow: 0 0 0 10px rgba(52, 172, 224, 0);
-  }
-  100% {
-    transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
-  }
-}
-
-@keyframes shake {
-  0% {
-    transform: translate(1px, 1px) rotate(0deg);
-  }
-  10% {
-    transform: translate(-1px, -2px) rotate(-1deg);
-  }
-  20% {
-    transform: translate(-3px, 0px) rotate(1deg);
-  }
-  30% {
-    transform: translate(3px, 2px) rotate(0deg);
-  }
-  40% {
-    transform: translate(1px, -1px) rotate(1deg);
-  }
-  50% {
-    transform: translate(-1px, 2px) rotate(-1deg);
-  }
-  60% {
-    transform: translate(-3px, 1px) rotate(0deg);
-  }
-  70% {
-    transform: translate(3px, 1px) rotate(-1deg);
-  }
-  80% {
-    transform: translate(-1px, -1px) rotate(1deg);
-  }
-  90% {
-    transform: translate(1px, 2px) rotate(0deg);
-  }
-  100% {
-    transform: translate(1px, -2px) rotate(-1deg);
-  }
-}
-
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
-/*
-theme name: TP1 Casimir Danishcar
-*/
 .site {
-  background-color: #001e70;
+  background-color: #6faee2;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  clip-path: polygon(83% 0, 100% 0, 100% 100%, 63% 100%);
+  background-color: #0b266a;
+  z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #6faee2;
+  background-color: rgba(111, 174, 226, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #051d29;
+  background-color: rgba(5, 29, 41, 0.5);
 }
 
 .site__main {
   grid-area: main;
-  background-color: #79b5dc;
+  background-color: rgba(213, 230, 241, 0.5);
   padding: 10px 15px 10px 15px;
 }
 
@@ -936,24 +958,16 @@ theme name: TP1 Casimir Danishcar
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
 
-.home::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: #f6b7fc;
-  z-index: -1;
-  clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
-}
-
 @media screen and (min-width: 800px) {
   .site {
     grid-template-columns: auto 300px;
     grid-template-areas: "header header" " main sidebar" "footer footer";
+  }
+  .home {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: auto;
+    grid-template-areas: "sidebar" "header" "main" "footer";
   }
 }
 /*# sourceMappingURL=style.css.map */

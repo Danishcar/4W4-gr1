@@ -1,12 +1,13 @@
-/**
-Theme name: TP1 Danishcar Casimir (version en classe)
-Author: Danishcar Casimir 
-Author: URI: https://github.com/Danishcar/4W4-gr1
-Description: Exercice dans le cadre du cours 4W4
-Version: 1.0
-Requires PHP: 7.0
+/*
+theme name: groupe-1 eddy martin exo3 
+Author: Eddy martin
+Author URI: https://github.com/eddytuto
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
 License: GNU General Public License v2 or later
+License URI: LICENSE
 Text Domain: cidw-4w4
+
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -25,26 +26,24 @@ INITIALISATION
 ÉLÉMENTS
 --------------------------------------------------------- */
 @import "elements/links";
+@import "elements/balises";
 
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 @import "composantes/contenu";
 @import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/navigation_accueil";
+@import "composantes/navigation_categorie_cours";
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/recherche";
 @import "composantes/single-post";
-@import "composantes/front-page";
-@import "composantes/navigation";
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
 @import "animation/entete";
-@import "animation/page_404";
-@import "animation/description_header";
-@import "animation/formation_cours";
-@import "animation/nav";
 /* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */

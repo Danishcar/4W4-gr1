@@ -1,12 +1,15 @@
-# Exrcice #1 - 4W4 - Conception d'interface et développement Web
+# 4w4 - Conception d'interface et développement Web
 ### Auteur : Eddy Martin
-### Date de remise : 11 février 2022
+### Semaine #5 cours #2: Les fonctions:
+### Utilisation de l'engin de recherche de WP
+###### get_home_url('/')
+###### get_search_query()
+###### get_search_form()
 
-```
-Cet exercice nous a permis d'introduire la structure d'un thème Wordpress. Voici la structure utilisée:
--Pour le style css nous avons utilisé Sass
--Les fonctions du thème se trouvent dans «functions.php»
--Les modèle principal est : «index.php»
+Le template « searchform.php »
+Le modèle « search.php »
+
+Développement du modèle « search.php » et du template « searchform.php »
 
 Pour modifier readme.md
-https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+[Commande de base de l'éditeur](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
