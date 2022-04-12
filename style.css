@@ -734,6 +734,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 ----------------------------------------------------------------- */
 .menu-categorie_cours-container .menu {
   display: flex;
+  flex-direction: column;
   list-style-type: none;
   justify-content: space-around;
 }
