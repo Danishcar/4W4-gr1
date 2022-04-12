@@ -11,17 +11,26 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
         justify-content: space-around;
      
         .menu-item { //li
+            margin : 0 15px;
+            background-color: $color__bouton__background;
              a {
-                 padding : 5px 10px;
-                 text-decoration: none;
+                color : $color__bouton__color; 
+                padding : 5px;
              }
+
+             &:hover {
+                background-color: $color__bouton__background--hover;
+                a { 
+                    color : $color__bouton__color--hover;
+                }
+            }
         }
 
         .current-menu-item {
-            
+            background-color: $color__bouton__background--current;
             a{
                 color : $couleur__bouton--current;
-                background-color: $couleur__bouton__background--current;
+               
             }
             
         }
