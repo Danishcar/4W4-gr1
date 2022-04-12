@@ -698,20 +698,18 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 20%;
-  height: 175px;
-  border: 1px solid #aaa;
+  width: 15%;
+  height: 250px;
+  padding: 10px;
 }
 
 .menu-accueil-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  text-decoration: none;
+  font-size: 1.5rem;
   height: 100%;
-  font-size: 2rem;
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-description {
@@ -720,12 +718,11 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item a .menu-item-icone {
-  width: 2rem;
-  height: 2rem;
-  border: 1px solid #aaa;
-  margin-top: auto;
-  background-repeat: no-repeat;
+  width: 3rem;
+  height: 3rem;
   background-position: center;
+  background-repeat: no-repeat;
+  margin-top: auto;
   background-size: cover;
 }
 
