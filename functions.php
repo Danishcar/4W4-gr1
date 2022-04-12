@@ -18,7 +18,9 @@ function cidw_4w4_register_nav_menu(){
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
         'menu_lien_externe'  => __( 'Menu lien externe', 'cidw_4w4' ),
         'menu_cours' => __('Menu categories cours', 'cidw_4w4'),
-        'menu_accueil' => __('Menu accueil', 'cidw_4w4')
+        'menu_accueil' => __('Menu accueil', 'cidw_4w4'),
+        'menu_departement' => __('Menu Département', 'cidw_4w4'),
+        'menu_evenemment' => __('Menu Évenemment', 'cidw_4w4'),
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );

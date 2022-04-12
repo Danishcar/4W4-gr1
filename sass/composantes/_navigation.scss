@@ -17,6 +17,7 @@
 }
 #chk-burger:checked ~ .menu-principal-container{
     display : block;
+    animation: anim-entete 1s;
 }
 
 
