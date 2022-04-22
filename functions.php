@@ -17,7 +17,7 @@ function cidw_4w4_register_nav_menu(){
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
         'menu_lien_externe'  => __( 'Menu lien externe', 'cidw_4w4' ),
-        'menu_cours' => __('Menu categories cours', 'cidw_4w4'),
+        'menu_categorie_cours' => __('Menu categories cours', 'cidw_4w4'),
         'menu_accueil' => __('Menu accueil', 'cidw_4w4'),
         'menu_departement' => __('Menu Département', 'cidw_4w4'),
         'menu_evenemment' => __('Menu Évenemment', 'cidw_4w4'),
@@ -73,6 +73,19 @@ add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support' );
 
 function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
+
+    register_sidebar(
+        array(
+            'id'            => 'entete_1',
+            'name'          => __( 'Entete #1' ),
+            'description'   => __( 'Sidebar s\'affichant dans l\'entete' ),
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h3 class="widget-title">',
+            'after_title'   => '</h3>',
+        )
+    );
+    
     register_sidebar(
         array(
             'id'            => 'pied_page_colonne_1',
