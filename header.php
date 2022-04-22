@@ -10,6 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les cours du TIM</title>
 
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?>
@@ -57,16 +58,13 @@
             <!-- form recherche -->
         </div>
     </header>
-    <section class="site__barre">
-        <input type="checkbox" id="chk-burger">
-        <label for="chk-burger" id="burger">
-            <svg width="32px" height="32px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-                color="#ddd">
-                <path fill-rule="evenodd"
-                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                    clip-rule="evenodd"></path>
-            </svg>
+    <aside class="site__barre">
+        <label class="burger__etiquette" for="site__barre__menu-principal-container-checkbox">
+            <svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" color="#000"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
         </label>
-        <?php wp_nav_menu(array("menu"=>"principal",
-                            "container"=>"nav")); ?>
-    </section>
+        <input class="burger__checkbox" type="checkbox" id="site__barre__menu-principal-container-checkbox">
+        <?php 
+            wp_nav_menu(array(  "menu" => "principal",
+                                "container" => "nav")); 
+        ?>
+    </aside>
