@@ -15,7 +15,7 @@
     ?>
     <section class="site__footer__rangee__sociaux"><?php get_sidebar('pied_page_ligne_1'); ?></section>
     <section class="site__footer__rangee__droits">&copy; Collège de Maisonneuve - Tous droits réservés</section>
-    <section class="site__footer__rangee__auteur">Thème réalisé par Florence Lemieux Cayer</section>
+    <section class="site__footer__rangee__auteur">Thème réalisé par Danishcar Casimir</section>
 </div>
 
 </body>
