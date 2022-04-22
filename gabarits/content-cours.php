@@ -1,29 +1,25 @@
-<?php 
+<div class="cours__conteneur">
+    <?php if (have_posts()): ?>
+        <?php while (have_posts()): the_post(); ?>
+            <?php $categorie = get_the_category(); ?>
 
-    $categorie = get_the_category();
-    // var_dump($categorie);
-    // echo $categorie[1]->slug
-
-?>
-<article class="formation__cours  <?php  echo $categorie[1]->slug; ?>">
-    <?php          
-    $titre = get_the_title();
-    // 1w1 Mise en page Web
-    $titreFiltreCours = substr($titre, 4, -6);
-    //$nbHeures = substr($titre, -6);
-    // on peut utiliser le champ personnalisé « nombre_dheures »
-    $nbHeures = get_field( "nombre_dheures" ) . " heures";
-   //echo $nombre_dheure;
-    $sigleCours = substr($titre, 0, 3);
-    $descCours = get_the_excerpt();
-    ?>
-    <?php the_post_thumbnail("thumbnail"); ?>
-    <h3 class="cours__titre">
-        <a href="<?php echo get_permalink(); ?>">
-            <?= $titreFiltreCours; ?>
-        </a>
-    </h3>
-    <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-    <p class="cours__sigle"><?= $sigleCours; ?> </p>
-    <p class="cours__desc"> <?= $descCours; ?></p>
-</article>
+            <a href=<?= get_permalink(); ?> class="carte">
+                <div class="carte__etiquettes">
+                    <div class="carte__etiquettes__sigle">
+                        <span class="carte__etiquettes__sigle__contenu"><?= le_sigle(get_the_title()); ?></span>
+                    </div>
+                    <div class="carte__etiquettes__duree">
+                        <span class="carte__etiquettes__duree__contenu"><?= la_duree(get_the_title()); ?></span>
+                    </div>
+                </div>
+                <h3 class="carte__titre">
+                    <?= le_titre_filtre(get_the_title()); ?>
+                </h3>
+                <div class="carte__miniature">
+                    <?php the_post_thumbnail(); ?>
+                </div>
+            </a>
+            
+        <?php endwhile ?>
+    <?php endif ?>
+</div>
