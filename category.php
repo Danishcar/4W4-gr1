@@ -15,7 +15,7 @@
             ?>
         </div>
 
-        <?php get_template_part('gabarits/gabarit', 'cours'); ?>
+        <?php get_template_part('gabarits/content', 'cours'); ?>
     </section>
 </main>
 <?php get_footer(); ?>

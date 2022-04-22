@@ -1,15 +1,38 @@
 .cours {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 2rem;
 
-
-    &__titre {
-        color : #f00;
+    &__image {
+        width: 100%;
+        
+        img {
+            width: 100%;
+            height: 25em;
+            object-fit: cover;
+        }
     }
 
-    section{
-        display : flex;
-        img{}
+    &__titre {
+        font-size: 4em;
+    }
 
-        p{}
+    &__etiquettes {
+        display: flex;
+        gap: 20px;
 
+        &__sigle,
+        &__duree {
+            @include etiquette(
+                2em,
+                $foncer,
+                $clair
+            )
+        } 
+    }
+
+    &__contenu {
+        font-size: 1.5em;
+        text-align: justify; 
     }
 }

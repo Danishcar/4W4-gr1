@@ -1,72 +1,58 @@
 
-#burger {
-    position : absolute;
-    transition : transform .3s;
-    transform : rotate(0);
-}
+nav.menu-principal-container {
+    @include theme_clair();
+    padding: 15px;
+    background-color: $clr-fond__nav;
+    font-size: 1.5em;
+    width: 100vw;
+    height: 100vh;
 
-#chk-burger {
-    display : none;
-}
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    transform: translateX(-100vw);
+    transition: transform .5s ease-in-out;
 
-#chk-burger:checked ~ #burger {
-    transform : rotate(90deg);
-}
-.menu-principal-container {
-    display : none;
-}
-#chk-burger:checked ~ .menu-principal-container{
-    display : block;
-    animation: anim-entete 1s;
-}
-
-
-.menu-principal-container{
-    padding :30px 0 0 0;
-    background-color: $color__background-link;
-    .menu{
-        list-style-type: none;
-        margin : 0;
-    
+    @media screen and (min-width: $largeur__media-tablette) {
+        width: 30vw;
     }
-    .menu-item{
-        margin:0;
-        padding : 0;
-        a{
-            display : block;
-            text-decoration: none;
-            padding : 4px;
-         
-            &:hover {
-                background-color: $color__background-link-hover;
+
+    ul.menu {
+        list-style: none;
+        
+        li.menu-item {
+            margin: 0;
+
+            a {
+                padding: 5px;
+                text-decoration: none;
+                @include hover-ombre__rapide;
             }
         }
     }
 }
 
-@media screen and (min-width : $largeur__media--tablette){
-   .site #burger {
-        display : none;
-    }
-   .site .menu-principal-container {
-        display : block;
+.site__main div{
+
+    ul {
+        display: flex;
+        font-size: 2rem;
+        list-style-type: none;
+        padding: 10px;
     }
 
-    .home #burger {
-        display : block;
+    li {
+        background-color: $accents;
+        margin: 5px;
+        border: solid 2px $textes-liens;
+        box-shadow: 1px 1px 5px rgb(35, 59, 44);
     }
-   .home .menu-principal-container {
-        display : none;
+    li:hover a {
+        color: $foncer;
     }
-
-
-    
 }
 
 
-
-
-
-
-
-
+.site__main div h2 {
+    font-size: 2.5rem;
+}
