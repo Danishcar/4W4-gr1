@@ -699,7 +699,7 @@ COMPOSANTES
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
-.departement__menu .menu .accueil__etudiant .menu-item-icone, .evenement__menu .menu .accueil__etudiant .menu-item-icone {
+.departement__menu .menu .menu-item-180 .menu-item-icone, .evenement__menu .menu .menu-item-180 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
@@ -720,18 +720,21 @@ COMPOSANTES
 }
 
 .departement__menu .menu .menu-item, .evenement__menu .menu .menu-item {
-  width: 15%;
+  width: 20%;
   height: 250px;
   padding: 10px;
-  border: 1px solid magenta;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid magenta;
   background-color: darkblue;
+  border-radius: 5% 5% 5% 5%;
   color: whitesmoke;
 }
 
 .departement__menu .menu .menu-item a, .evenement__menu .menu .menu-item a {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   height: 100%;
@@ -1005,6 +1008,7 @@ ANIMATION
   top: 0;
   left: 0;
   background-color: black;
+  transition: all 0.5s ease-in-out;
 }
 
 .burger__ligne:nth-of-type(1) {
@@ -1017,6 +1021,32 @@ ANIMATION
 
 .burger__ligne:nth-of-type(3) {
   clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
+}
+
+.burger:hover .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+.burger:hover .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
+  opacity: 0;
+}
+
+.burger:hover .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+}
+
+.burger__X .burger__ligne:nth-of-type(1) {
+  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+}
+
+.burger__X .burger__ligne:nth-of-type(2) {
+  clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
+  opacity: 0;
+}
+
+.burger__X .burger__ligne:nth-of-type(3) {
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 
 /* ---------------------------------------------------------

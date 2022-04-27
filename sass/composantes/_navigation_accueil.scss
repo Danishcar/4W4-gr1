@@ -17,7 +17,7 @@
             
 
         }
-        .accueil__etudiant .menu-item-icone{
+        .menu-item-180 .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
         }
         
@@ -37,17 +37,20 @@
 
         .menu-item {
             //li
-            width : 15%;
+            width : 20%;
             height : 250px;
             padding : 10px;
-            border: 1px solid magenta;
+            align-items: center;
+            justify-content: space-evenly;
+            border: 2px solid magenta;
             background-color: darkblue;
+            border-radius: 5% 5% 5% 5%;
             color: whitesmoke;
 
             a {
                 display : flex;
                 flex-direction: column;
-                justify-content: space-between;
+                justify-content: center;
                 align-items: center;
                
                 font-size: 1.5rem;

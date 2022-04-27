@@ -15,6 +15,11 @@ false);
     array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'),
     true); //true pour intégrer le js en bas du document
 
+    wp_enqueue_script('cidw-4w4-burger', 
+    get_template_directory_uri() . '/javascript/burger.js', 
+    array(), filemtime(get_template_directory() . '/javascript/burger.js'),
+    true); //true pour intégrer le js en bas du document
+
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
@@ -51,7 +56,7 @@ add_filter("wp_nav_menu_objects","cidw_4w4_filtre_choix_menu");
 function prefix_nav_description( $item_output, $item) {
     if ( !empty( $item->description ) ) {
         $item_output = str_replace( '</a>',
-        '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span></a>',
               $item_output );
     }
     return $item_output;
