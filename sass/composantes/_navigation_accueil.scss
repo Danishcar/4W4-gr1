@@ -1,24 +1,36 @@
-.menu-accueil-container, .menu-evenement-container {
+.departement__menu, .evenement__menu {
     // nav
 
     .menu {
         //ul
         display : flex;
+        align-items: center;
         justify-content: space-around;
-        .accueil__cours .menu-item-icone{
+        padding: 10px;
+        #menu-item-184 .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
         }
-        .accueil__prof .menu-item-icone{
+        #menu-item-185 .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
         }
-        .accueil__aide .menu-item-icone{
+        #menu-item-186 .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
             
 
         }
-        .accueil__etudiant .menu-item-icone{
+        #menu-item-180 .menu-item-icone{
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
         }
+        #menu-item-181 .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        #menu-item-182 .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+        #menu-item-183 .menu-item-icone{
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+        }
+
         .menu-item {
             //li
             width : 15%;

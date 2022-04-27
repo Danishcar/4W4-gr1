@@ -681,34 +681,48 @@ COMPOSANTES
   }
 }
 
-.menu-accueil-container .menu, .menu-evenement-container .menu {
+.departement__menu .menu, .evenement__menu .menu {
   display: flex;
+  align-items: center;
   justify-content: space-around;
+  padding: 10px;
 }
 
-.menu-accueil-container .menu .accueil__cours .menu-item-icone, .menu-evenement-container .menu .accueil__cours .menu-item-icone {
+.departement__menu .menu #menu-item-184 .menu-item-icone, .evenement__menu .menu #menu-item-184 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
 }
 
-.menu-accueil-container .menu .accueil__prof .menu-item-icone, .menu-evenement-container .menu .accueil__prof .menu-item-icone {
+.departement__menu .menu #menu-item-185 .menu-item-icone, .evenement__menu .menu #menu-item-185 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
 }
 
-.menu-accueil-container .menu .accueil__aide .menu-item-icone, .menu-evenement-container .menu .accueil__aide .menu-item-icone {
+.departement__menu .menu #menu-item-186 .menu-item-icone, .evenement__menu .menu #menu-item-186 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
-.menu-accueil-container .menu .accueil__etudiant .menu-item-icone, .menu-evenement-container .menu .accueil__etudiant .menu-item-icone {
+.departement__menu .menu #menu-item-180 .menu-item-icone, .evenement__menu .menu #menu-item-180 .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
-.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+.departement__menu .menu #menu-item-181 .menu-item-icone, .evenement__menu .menu #menu-item-181 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+}
+
+.departement__menu .menu #menu-item-182 .menu-item-icone, .evenement__menu .menu #menu-item-182 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+}
+
+.departement__menu .menu #menu-item-183 .menu-item-icone, .evenement__menu .menu #menu-item-183 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+}
+
+.departement__menu .menu .menu-item, .evenement__menu .menu .menu-item {
   width: 15%;
   height: 250px;
   padding: 10px;
 }
 
-.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
+.departement__menu .menu .menu-item a, .evenement__menu .menu .menu-item a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -717,12 +731,12 @@ COMPOSANTES
   height: 100%;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
+.departement__menu .menu .menu-item a .menu-item-description, .evenement__menu .menu .menu-item a .menu-item-description {
   font-size: 1rem;
   text-align: center;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
+.departement__menu .menu .menu-item a .menu-item-icone, .evenement__menu .menu .menu-item a .menu-item-icone {
   width: 3rem;
   height: 3rem;
   background-position: center;
