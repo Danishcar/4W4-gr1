@@ -683,18 +683,19 @@ COMPOSANTES
 
 .departement__menu .menu, .evenement__menu .menu {
   display: flex;
+  list-style-type: none;
   justify-content: space-around;
 }
 
-.departement__menu .menu .accueil__cours .menu-item-icone, .evenement__menu .menu .accueil__cours .menu-item-icone {
+.departement__menu .menu .departement__cours .menu-item-icone, .evenement__menu .menu .departement__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
 }
 
-.departement__menu .menu .accueil__prof .menu-item-icone, .evenement__menu .menu .accueil__prof .menu-item-icone {
+.departement__menu .menu .departement__prof .menu-item-icone, .evenement__menu .menu .departement__prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
 }
 
-.departement__menu .menu .accueil__aide .menu-item-icone, .evenement__menu .menu .accueil__aide .menu-item-icone {
+.departement__menu .menu .departement__aide .menu-item-icone, .evenement__menu .menu .departement__aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
@@ -722,6 +723,9 @@ COMPOSANTES
   width: 15%;
   height: 250px;
   padding: 10px;
+  border: 1px solid magenta;
+  background-color: darkblue;
+  color: whitesmoke;
 }
 
 .departement__menu .menu .menu-item a, .evenement__menu .menu .menu-item a {
@@ -985,6 +989,34 @@ ANIMATION
   100% {
     transform: translateY(0);
   }
+}
+
+.burger {
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  background-color: aliceblue;
+}
+
+.burger__ligne {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+}
+
+.burger__ligne:nth-of-type(1) {
+  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+}
+
+.burger__ligne:nth-of-type(2) {
+  clip-path: polygon(0 40%, 100% 40%, 100% 60%, 0 60%);
+}
+
+.burger__ligne:nth-of-type(3) {
+  clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
 }
 
 /* ---------------------------------------------------------
