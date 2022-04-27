@@ -12,6 +12,7 @@
             console.log(this.parentNode.children[0].innerHTML)
           boite__modale.classList.add('ouvrir')
           console.log(boite__modale.classList)
+          boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML
 
 
         })
@@ -21,6 +22,7 @@
     boite__modale__fermeture.addEventListener('mousedown', function(){
         boite__modale.classList.remove('ouvrir')
         console.log(boite__modale.classList)
+        
     })
 
   })()  
