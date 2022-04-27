@@ -683,37 +683,39 @@ COMPOSANTES
 
 .departement__menu .menu, .evenement__menu .menu {
   display: flex;
-  align-items: center;
   justify-content: space-around;
-  padding: 10px;
 }
 
-.departement__menu .menu #menu-item-184 .menu-item-icone, .evenement__menu .menu #menu-item-184 .menu-item-icone {
+.departement__menu .menu .accueil__cours .menu-item-icone, .evenement__menu .menu .accueil__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
 }
 
-.departement__menu .menu #menu-item-185 .menu-item-icone, .evenement__menu .menu #menu-item-185 .menu-item-icone {
+.departement__menu .menu .accueil__prof .menu-item-icone, .evenement__menu .menu .accueil__prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=octoface");
 }
 
-.departement__menu .menu #menu-item-186 .menu-item-icone, .evenement__menu .menu #menu-item-186 .menu-item-icone {
+.departement__menu .menu .accueil__aide .menu-item-icone, .evenement__menu .menu .accueil__aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
-.departement__menu .menu #menu-item-180 .menu-item-icone, .evenement__menu .menu #menu-item-180 .menu-item-icone {
+.departement__menu .menu .accueil__etudiant .menu-item-icone, .evenement__menu .menu .accueil__etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
 }
 
-.departement__menu .menu #menu-item-181 .menu-item-icone, .evenement__menu .menu #menu-item-181 .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+.departement__menu .menu .accueil__journee .menu-item-icone, .evenement__menu .menu .accueil__journee .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
-.departement__menu .menu #menu-item-182 .menu-item-icone, .evenement__menu .menu #menu-item-182 .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+.departement__menu .menu .accueil__porte__1 .menu-item-icone, .evenement__menu .menu .accueil__porte__1 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
-.departement__menu .menu #menu-item-183 .menu-item-icone, .evenement__menu .menu #menu-item-183 .menu-item-icone {
-  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+.departement__menu .menu .accueil__porte__2 .menu-item-icone, .evenement__menu .menu .accueil__porte__2 .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
+}
+
+.departement__menu .menu .accueil__projet .menu-item-icone, .evenement__menu .menu .accueil__projet .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
 .departement__menu .menu .menu-item, .evenement__menu .menu .menu-item {
