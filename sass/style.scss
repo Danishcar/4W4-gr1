@@ -27,15 +27,21 @@ INITIALISATION
 --------------------------------------------------------- */
 @import "elements/links";
 @import "elements/balises";
+@import "elements/boutons";
+@import "elements/etiquettes";
+@import "elements/filtres";
+@import "elements/menu";
+@import "elements/themes";
 
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-@import "composantes/contenu";
+@import "composantes/cours";
+@import "composantes/barre";
 @import "composantes/header";
 @import "composantes/navigation";
 @import "composantes/navigation_accueil";
-@import "composantes/navigation_categorie_cours";
+@import "composantes/search";
 @import "composantes/footer";
 @import "composantes/erreur_404";
 @import "composantes/recherche";
