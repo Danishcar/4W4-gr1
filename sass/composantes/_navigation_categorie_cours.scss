@@ -18,14 +18,14 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
             background-color:magenta;
             border: 2px solid blue;
              a {
-                color : $color__bouton__color; 
+                color : $couleur__bouton; 
                 padding : 5px;
              }
 
              &:hover {
-                background-color: $color__bouton__background--hover;
+                background-color: $couleur__bouton__background--hover;
                 a { 
-                    color : $color__bouton__color--hover;
+                    color : $couleur__bouton--hover;
                 }
             }
         }
