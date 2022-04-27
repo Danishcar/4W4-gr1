@@ -621,15 +621,10 @@ COMPOSANTES
 #burger {
   position: absolute;
   transition: transform .3s;
-  transform: rotate(0);
 }
 
 #chk-burger {
   display: none;
-}
-
-#chk-burger:checked ~ #burger {
-  transform: rotate(90deg);
 }
 
 .menu-principal-container {
@@ -996,9 +991,32 @@ ANIMATION
 
 .burger {
   position: relative;
-  width: 10rem;
-  height: 10rem;
-  background-color: aliceblue;
+  width: 2rem;
+  height: 2rem;
+  background-color: transparent;
+  border-radius: 50%;
+  z-index: 10;
+  overflow: hidden;
+  /*
+    &:hover{
+        .burger__ligne:nth-of-type(1){
+            clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+
+        }
+
+        .burger__ligne:nth-of-type(2){
+            clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
+            opacity: 0;
+
+        }
+        
+        .burger__ligne:nth-of-type(3){
+            clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+
+        }
+
+    }
+    */
 }
 
 .burger__ligne {
@@ -1021,19 +1039,6 @@ ANIMATION
 
 .burger__ligne:nth-of-type(3) {
   clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
-}
-
-.burger:hover .burger__ligne:nth-of-type(1) {
-  clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
-}
-
-.burger:hover .burger__ligne:nth-of-type(2) {
-  clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
-  opacity: 0;
-}
-
-.burger:hover .burger__ligne:nth-of-type(3) {
-  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 
 .burger__X .burger__ligne:nth-of-type(1) {

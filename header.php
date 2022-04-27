@@ -13,6 +13,15 @@
 
     <?php wp_head() ?>
     <?php show_admin_bar(true); ?>
+
+    <style>
+        /* À compléter pour récupérer la nouvelle couleur du clipPath */
+        .home::after{
+            background-color: <?=get_theme_mod("background_body_clippath");?>;
+
+        }
+    </style>
+
 </head>
 
 <body <?php body_class("site"); ?>>

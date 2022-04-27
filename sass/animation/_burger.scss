@@ -1,8 +1,11 @@
 .burger{
     position: relative;
-    width: 10rem;
-    height: 10rem;
-    background-color: aliceblue;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: 10;
+    overflow: hidden;
 
     &__ligne{
         position: absolute;
@@ -26,6 +29,7 @@
         }
     }
 
+    /*
     &:hover{
         .burger__ligne:nth-of-type(1){
             clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
@@ -44,11 +48,12 @@
         }
 
     }
+    */
 
 }
 
 .burger__X{
-    
+
     .burger__ligne:nth-of-type(1){
         clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
 
