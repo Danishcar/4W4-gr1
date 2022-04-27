@@ -39,5 +39,4 @@ add_action('customize_register', function(WP_Customize_Manager $manager){
 *                        ["section"=>"le ID de la section",
 *                        "label"=>l'étiquette de la variable dans le formulaire  ])); 
 **/
-
-?> 
+?>
