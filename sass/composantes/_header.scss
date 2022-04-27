@@ -1,27 +1,20 @@
 .site__header {
-  @include theme_sombre();
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 2px solid white;
-  padding: 2rem;
-
-  @media screen and (min-width: $largeur__media-tablette) {
+    background-color: $color__background-header;
+    color: $color__font-header;
+    padding-left: 10px;
+    display : flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    @media screen and (min-width : 700px){
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-  }
-
+    }
     &__titre{
       display: flex;
-        flex-direction: column;
-        margin-left: 2rem;
-        h1, h2 {
-            margin-block-start: 10px;
-            margin-block-end: 0;
-        }
+      align-items: center;
+      justify-content: flex-start;
   
     }
 

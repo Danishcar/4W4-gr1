@@ -1,58 +1,50 @@
-$foncer: rgb(60, 82, 59);
-$clair: rgb(132, 173, 148);
-$textes-liens:rgb(110, 84, 72);
-$accents: rgb(235, 235, 235);
+/* ---------------- BACKGROUND */
+$color__background-body : hsl(207, 66%, 66%);
+$color__background-body-clip : hsl(223, 81%, 23%);
+$color__background-main : hsl(204, 49%, 89%);
+$color__background-cours : hsl(209, 100%, 91%);
+$color__background-header : hsl(207, 66%, 66%);
+$color__background-barre : hsl(200, 78%, 9%);
+$color__background-footer : hsl(225, 78%, 13%);
+$color__background-link : hsl(229, 64%, 70%);
+$color__background-link-hover : hsl(236, 64%, 44%);
 
-$ombre-petite: 2.5px 2.5px 5px rgba(0, 0, 0, .5);
+$color__background-404 : hsl(335, 39%, 55%);
 
-/* --- Éléments principaux --- */
-/* Site */
-$clr-fond__select: $accents;
-$clr-text__select: $clair;
+/* ---------------- LIENS */
+$color__link : hsl(18, 27%, 38%);
+$color__link-hover : hsl(0, 0%, 100%);
+$color__link-visited : hsl(19, 29%, 28%);
+/* ---------------- LIENS FOOTER */
+$color__link__footer : hsl(0, 91%, 50%);
+$color__link__footer-hover : hsl(123, 80%, 49%);
+$color__link__footer-visited : hsl(231, 84%, 50%);
+/* ---------------- LIENS HEADER titre principal du site */
+$color__link__header : hsl(0, 82%, 68%);
+$color__link__header-hover : hsl(123, 63%, 72%);
+$color__link__header-visited : hsl(261, 62%, 56%);
 
-/* Header */
-$clr-fond__hdr: $foncer;
-$clr-titre__hdr: $accents;
-$clr-texte__hdr: $clair;
+/* ---------------- FONT */
+$color__font-header : rgb(4, 6, 41);
+$color__font-main :rgb(235, 202, 193);
+$color__font-barre : rgb(255, 255, 255);
+$color__font-footer : rgb(241, 242, 248);
 
-$clr-lien__hdr: $accents;
-$clr-lien-hover__hdr: $clair;
-$clr-lien-visite__hdr: $accents;
 
-/* Footer */
-$clr-fond__ftr: $foncer;
-$clr-texte__ftr: $clair;
-$clr-titre__ftr: $accents;
-$clr-lien__ftr: $clair;
-$clr-lien-visite__ftr: $textes-liens;
-$clr-lien-hover__ftr: $accents;
+/*  -------------------   Titre */
+$couleur__titre__principale : rgba(8, 33, 175, 0.938);
+$couleur__titre__secondaire : rgba(61, 86, 139, 0.938);
+$couleur__titre__ternaire : rgba(68, 92, 173, 0.938);
+$couleur__paragraphe : rgb(5, 23, 82);
 
-$clr-fond__ftr-cln: $clair;
-$clr-texte__ftr-cln: $foncer;
-$clr-titre__ftr-cln: $accents;
-$clr-lien__ftr-cln: $foncer;
-$clr-lien-visite__ftr-cln: $textes-liens;
-$clr-lien-hover__ftr-cln: $accents;
+/*  -------------------   bouton */
+$couleur__bouton : rgba(6, 14, 58, 0.938);
+$couleur__bouton__background : rgba(101, 134, 203, 0.938);
+$couleur__bouton--hover : rgba(36, 57, 126, 0.938);
+$couleur__bouton__background--hover : rgba(138, 154, 205, 0.938);
+$couleur__bouton--current : rgba(205, 210, 235, 0.938);
+$couleur__bouton__background--current : rgba(37, 51, 95, 0.938);
 
-/* Navigation */
-$clr-fond__nav: $clair;
-$clr-lien__nav: $foncer;
-$clr-lien-visite__nav: $textes-liens;
-$clr-lien-hover__nav: $accents;
 
-/* Main */
-$clr-fond__main: $clair;
-$clr-texte__main: $foncer;
-$clr-titre__main: $foncer;
-$clr-lien__main: $foncer;
-$clr-lien-visite__main: $textes-liens;
-$clr-lien-hover__main: $accents;
 
-/* --- Éléments de contenu --- */
-/* Carte */
-$clr-fond__crt: $clair;
-$clr-texte__crt: $foncer;
-$clr-titre__crt: $foncer;
-$clr-lien__crt: $foncer;
-$clr-lien-visite__crt: $textes-liens;
-$clr-lien-hover__crt: $accents;
+$couleur__paragraphe : rgb(5, 23, 82);

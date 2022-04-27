@@ -1,11 +1,19 @@
 <?php 
+require_once("options/apparence.php");
 
 function cidw_4w4_enqueue(){
     //wp_enqueue_style('style_css', get_stylesheet_uri());
-    wp_enqueue_style('cidw-4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
-    wp_enqueue_style('cidw-4w4-police-google',"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap");
-
-    
+    wp_enqueue_style('cidw-4w4-le-style', 
+    get_template_directory_uri() . '/style.css', 
+    array(), filemtime(get_template_directory() . '/style.css'), 
+    false);
+    wp_enqueue_style('cidw-4w4-police-google',
+    "https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap",
+false);
+    wp_enqueue_script('4w4-le-boite-modale', 
+    get_template_directory_uri() . '/javascript/boite-modale.js', 
+    array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'),
+    true); //true pour intégrer le js en bas du document
 
 }
 
@@ -17,7 +25,7 @@ function cidw_4w4_register_nav_menu(){
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
         'menu_lien_externe'  => __( 'Menu lien externe', 'cidw_4w4' ),
-        'menu_categorie_cours' => __('Menu categories cours', 'cidw_4w4'),
+        'menu_cours' => __('Menu categories cours', 'cidw_4w4'),
         'menu_accueil' => __('Menu accueil', 'cidw_4w4'),
         'menu_departement' => __('Menu Département', 'cidw_4w4'),
         'menu_evenemment' => __('Menu Évenemment', 'cidw_4w4'),
@@ -48,7 +56,7 @@ function prefix_nav_description( $item_output, $item) {
     }
     return $item_output;
 }
-add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 3 );
 // l'argument 10 : niveau de privilège
 // l'argument 2 : le nombre d'argument dans la fonction de rappel: «prefix_nav_description»
 
@@ -73,19 +81,6 @@ add_action( 'after_setup_theme', 'cidw_4w4_add_theme_support' );
 
 function my_register_sidebars() {
     /* Register the 'primary' sidebar. */
-
-    register_sidebar(
-        array(
-            'id'            => 'entete_1',
-            'name'          => __( 'Entete #1' ),
-            'description'   => __( 'Sidebar s\'affichant dans l\'entete' ),
-            'before_widget' => '<div id="%1$s" class="widget %2$s">',
-            'after_widget'  => '</div>',
-            'before_title'  => '<h3 class="widget-title">',
-            'after_title'   => '</h3>',
-        )
-    );
-    
     register_sidebar(
         array(
             'id'            => 'pied_page_colonne_1',
@@ -166,8 +161,8 @@ function cidw_4w4_pre_get_posts(WP_Query $query)
     }        
     else
     {
-        $ordre = get_query_var('ordre');
-        $cle = get_query_var('cletri');       
+        $ordre = get_query_var('ordre', 'asc');
+        $cle = get_query_var('cletri', 'title');       
         $query->set('order',  $ordre);
         $query->set('orderby', $cle);
 

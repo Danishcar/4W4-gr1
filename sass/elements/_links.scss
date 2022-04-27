@@ -1,34 +1,26 @@
-@mixin links($couleur, $couleur__visite, $couleur__hover) {
-	display: inline-block;
-	text-decoration: none;
-	padding: 10px;
+@mixin links(	$couleur, 
+				$couleur--visited, 
+				$couleur--hover)
+{
 	color: $couleur;
-	box-sizing: border-box;
-	border: 2px solid transparent;
 
 	&:visited {
-		color: $couleur__visite;
-		opacity: .8;
-
-		svg {
-			color: $couleur__visite;
-		}
+		color: $couleur--visited;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: $couleur__hover;
-		border-radius: 10px;
-		border: 2px solid $couleur__hover;
-
-		svg {
-			color: $couleur__hover;
-		}
+		color: $couleur--hover;
 	}
 
-	svg {
-		color: $couleur;
+	&:focus {
+		outline: thin dotted;
+	}
+
+	&:hover,
+	&:active {
+		outline: 0;
 	}
 }
 

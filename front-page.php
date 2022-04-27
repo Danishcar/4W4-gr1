@@ -1,5 +1,5 @@
 <?php get_header() ?>
-<main class="site__main home">
+<main class="site__main">
 
 <section class="animation">
     <div class="animation__bloc">1</div>
@@ -9,10 +9,9 @@
     <div class="animation__bloc">5</div>
 </section>
 
-<h1 class="site__main__titre home__titre">Accueil</h1>
-    <div class="titre__accueil__departement">
+<div class="titre__accueil__departement">
     <h2>Département</h2>
-    <?php
+<?php
         wp_nav_menu(array(
             "menu" => "departement",
             "container" => "nav",
@@ -21,16 +20,23 @@
     ?>
     </div>
 
-    <div class="titre__accueil__evenements">
+    <div class="titre__accueil__evenement">
     <h2>Évènements</h2>
     <?php
         wp_nav_menu(array(
-            "menu" => "evenements",
+            "menu" => "evenement",
             "container" => "nav",
-            "container_class" => "evenements__menu"
+            "container_class" => "evenement__menu"
         ));
     ?>
     </div>
+
+    <h1>---- Front-page.php ------</h1>
+   <?php if (have_posts()): the_post(); ?>
+        <?php the_title() ?>
+        <?php the_content() ?>   
+  
+   <?php endif ?>
    
 </main>
 <?php get_footer() ?>
