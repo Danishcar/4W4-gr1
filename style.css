@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*
 theme name: Exercice 4 Danishcar Casimir
-Author: Eddy martin
+Author: Danishcar Casimir
 Author URI: https://github.com/Danishcar/4W4-gr1
 Description: Exercice dans le cadre du cours 4W4
 Version: 1.0.0
@@ -1015,6 +1015,7 @@ ANIMATION
         }
 
     }
+    
     */
 }
 
@@ -1040,16 +1041,37 @@ ANIMATION
   clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
 }
 
-.burger__X .burger__ligne:nth-of-type(1) {
+/*
+.burger__X{
+
+    .burger__ligne:nth-of-type(1){
+        clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
+
+    }
+
+    .burger__ligne:nth-of-type(2){
+        clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
+        opacity: 0;
+
+    }
+    
+    .burger__ligne:nth-of-type(3){
+        clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
+
+    }
+
+}
+*/
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(1) {
   clip-path: polygon(7.1% -7.1%, 107.1% 92.9%, 92.9% 107.1%, -7.1% 7.1%);
 }
 
-.burger__X .burger__ligne:nth-of-type(2) {
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(2) {
   clip-path: polygon(40% 40%, 40% 40%, 60% 60%, 60% 60%);
   opacity: 0;
 }
 
-.burger__X .burger__ligne:nth-of-type(3) {
+#chk-burger:checked ~ #burger .burger__ligne:nth-of-type(3) {
   clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 
