@@ -938,6 +938,20 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   transform: scale(1);
 }
 
+.galerie {
+  width: 100%;
+}
+
+@media screen and (min-width: 500px) {
+  .galerie {
+    width: 75%;
+  }
+}
+
+.home .site__main {
+  align-items: center;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1109,6 +1123,8 @@ LAYOUT
 }
 
 .site__main {
+  display: flex;
+  flex-direction: column;
   grid-area: main;
   background-color: rgba(213, 230, 241, 0.5);
   padding: 10px 15px 10px 15px;

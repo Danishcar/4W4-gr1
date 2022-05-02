@@ -32,6 +32,8 @@
 }
 
 .site__main{
+    display: flex;
+    flex-direction: column;
     grid-area: main;
     background-color: rgba($color__background-main,.5);
     padding: 10px 15px 10px 15px;
