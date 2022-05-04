@@ -17,6 +17,13 @@
         bouton.dataset.indexe = indexe++
         boite__carrousel__navigation.append(bouton)
         console.log(img.tagName)
+    /*Ajout d'un écouteur sur chacun des boutons de navigation de notre carrousel */
+        bouton.addEventListener('mousedown', function(){
+            console.log(this.dataset.indexe)
+            image.setAttribute('src', galerie__img[this.dataset.indexe].getAttribute('src'))
+        }) // fin de l'écouteur de navigation    
+
+    /*Ajout d'un écouteur sur chacune des images de la galerie */
         img.addEventListener('mousedown',function(){
           boite__carrousel.classList.add('ouvrir')
           console.log(this.getAttribute('src'))
