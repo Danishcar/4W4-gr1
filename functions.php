@@ -20,13 +20,13 @@ wp_register_script('4w4-le-boite-modale',
         wp_enqueue_script('4w4-le-boite-modale');
 
     }
-    wp_register_script('4w4-le-caroussel', 
-    get_template_directory_uri() . '/javascript/caroussel.js', 
-    array(), filemtime(get_template_directory() . '/javascript/caroussel.js'),
+    wp_register_script('4w4-le-carrousel', 
+    get_template_directory_uri() . '/javascript/carrousel.js', 
+    array(), filemtime(get_template_directory() . '/javascript/carrousel.js'),
     true); //true pour intégrer le js en bas du document
 
     if (is_front_page()){
-        wp_enqueue_script('4w4-le-caroussel');
+        wp_enqueue_script('4w4-le-carrousel');
     }
     
 

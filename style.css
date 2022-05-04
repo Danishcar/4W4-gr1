@@ -921,26 +921,40 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   display: flex;
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: fixed;
-  top: 25%;
-  left: 25%;
   border: 5px solid magenta;
   background-color: deepskyblue;
   color: whitesmoke;
-  width: 50%;
-  min-height: 50%;
-  max-height: 100%;
   transform: scale(0);
   transition: all 1s ease-in-out;
+}
+
+.ouvrir {
+  transform: scale(1);
+}
+
+/*Les dimentions de la boite modale*/
+.boite__modale {
+  width: 50%;
+  height: auto;
+  min-height: 50%;
+  top: 25%;
+  left: 25%;
 }
 
 .boite__modale__texte {
   overflow: hidden;
 }
 
-.ouvrir {
-  transform: scale(1);
+/*Les dimentions de la boite carrousel*/
+.boite__carrousel {
+  width: 75%;
+  height: auto;
+  min-height: 50%;
+  top: 12.5%;
+  bottom: 12.5%;
+  left: 12.5%;
 }
 
 .galerie {
