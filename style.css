@@ -901,6 +901,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .erreur-404 h1 {
   font-size: 5rem;
+  animation: anim-jinx-404 800ms both;
 }
 
 .erreur-404 h2 {
@@ -1277,6 +1278,25 @@ ANIMATION
   100% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(52, 172, 224, 0);
+  }
+}
+
+@keyframes anim-jinx-404 {
+  0% {
+    transform: translate(0vw, 20vh) rotate(45deg) scale(8);
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.63, 0, 1, 0.17);
+  }
+  60% {
+    transform: translate(10vw, -5vh) rotate(0deg) scale(0.3);
+    opacity: 1;
+    animation-timing-function: cubic-bezier(0.01, 0.47, 0.13, 0.98);
+  }
+  95% {
+    transform: translate(0, 0) rotate(0deg) scale(1.5);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg) scale(1);
   }
 }
 
