@@ -1,17 +1,17 @@
 @mixin links(	$couleur, 
-				$couleur--visited, 
-				$couleur--hover)
+				$couleur__visited, 
+				$couleur__hover)
 {
 	color: $couleur;
 
 	&:visited {
-		color: $couleur--visited;
+		color: $couleur__visited;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
-		color: $couleur--hover;
+		color: $couleur__hover;
 	}
 
 	&:focus {

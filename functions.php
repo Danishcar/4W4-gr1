@@ -16,7 +16,7 @@ wp_register_script('4w4-le-boite-modale',
     array(), filemtime(get_template_directory() . '/javascript/boite-modale.js'),
     true); //true pour intégrer le js en bas du document
 
-    if (is_category('categorie_cours')){
+    if (is_category('cours')){
         wp_enqueue_script('4w4-le-boite-modale');
 
     }

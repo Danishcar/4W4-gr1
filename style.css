@@ -957,6 +957,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .boite__modale__texte {
   overflow: hidden;
+  padding: 5%;
 }
 
 /*Les dimentions de la boite carrousel*/
@@ -1012,6 +1013,10 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .home .site__main {
   align-items: center;
+}
+
+.home .site__main .titre__accueil__departement, .home .site__main .titre__accueil__evenement {
+  align-self: flex-start;
 }
 
 /* ---------------------------------------------------------
