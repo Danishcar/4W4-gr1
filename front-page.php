@@ -31,7 +31,6 @@
     ?>
     </div>
 
-    <h1>---- Front-page.php ------</h1>
    <?php if (have_posts()): the_post(); ?>
         <h2><?php the_title() ?></h2>
         <?php the_content() ?>   

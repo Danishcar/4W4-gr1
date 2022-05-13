@@ -15,6 +15,10 @@
       display: flex;
       align-items: center;
       justify-content: flex-start;
+
+      @media screen and (max-width:$largeur__media--mobile) {
+       flex-direction: column;
+      }
   
     }
 
@@ -25,10 +29,13 @@
 .header__titre {
       font-size: clamp(3rem, 4vw, 6rem);
       font-family: $font__titre;
+      animation: anim-entete 1s 0s forwards;
 }
 .header__description {
       font-size: clamp(2rem, 2vw, 4rem);
+      flex-wrap: wrap;
       font-family: $font__main;
+      animation: anim-entete 1s .25s forwards;
 }
 
 .util {
@@ -37,6 +44,7 @@
       flex-direction : column;
       width: 90%;
       text-align: center;
+      animation: anim-entete 1s .5s forwards;
     @media screen and (min-width:700px){
       width:300px;
       margin-left : auto;

@@ -21,11 +21,19 @@
             &:hover {
                 animation: brasser 1s infinite;
             }
+
+            @media screen and (max-width: $largeur__media--mobile) {
+                animation: brasser 1s infinite;
+            }
         }
         &:nth-of-type(2){
             animation : anim-entete 1s .25s forwards; 
 
             &:hover {
+                animation: brasser 1s infinite;
+            }
+
+            @media screen and (max-width: $largeur__media--mobile) {
                 animation: brasser 1s infinite;
             }
         }
@@ -35,6 +43,10 @@
             &:hover {
                 animation: brasser 1s infinite;
             }
+
+            @media screen and (max-width: $largeur__media--mobile) {
+                animation: brasser 1s infinite;
+            }
         }
         &:nth-of-type(4){
             animation : anim-entete 1s .75s forwards;
@@ -42,11 +54,19 @@
             &:hover {
                 animation: brasser 1s infinite;
             }
+
+            @media screen and (max-width: $largeur__media--mobile) {
+                animation: brasser 1s infinite;
+            }
         }
         &:nth-of-type(5){
             animation : anim-entete 1s 1s forwards;
 
             &:hover {
+                animation: brasser 1s infinite;
+            }
+
+            @media screen and (max-width: $largeur__media--mobile) {
                 animation: brasser 1s infinite;
             }
         }
