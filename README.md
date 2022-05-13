@@ -1,15 +1,10 @@
 # 4w4 - Conception d'interface et développement Web
-### Auteur : Eddy Martin
-### Semaine #5 cours #2: Les fonctions:
-### Utilisation de l'engin de recherche de WP
-###### get_home_url('/')
-###### get_search_query()
-###### get_search_form()
+### Auteur : Danishcar Casimir
+### Tp2
+### Lien du repository : https://github.com/Danishcar/4W4-gr1
+### Lien github page : https://danishcar.github.io/4W4-gr1/
 
-Le template « searchform.php »
-Le modèle « search.php »
 
-Développement du modèle « search.php » et du template « searchform.php »
 
 Pour modifier readme.md
 [Commande de base de l'éditeur](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
