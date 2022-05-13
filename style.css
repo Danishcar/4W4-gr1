@@ -684,6 +684,13 @@ COMPOSANTES
   justify-content: space-around;
 }
 
+@media screen and (max-width: 500px) {
+  .departement__menu .menu, .evenement__menu .menu {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+}
+
 .departement__menu .menu .departement__cours .menu-item-icone, .evenement__menu .menu .departement__cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=file-badge-bold");
 }
@@ -717,9 +724,10 @@ COMPOSANTES
 }
 
 .departement__menu .menu .menu-item, .evenement__menu .menu .menu-item {
-  width: 20%;
+  width: 100%;
   height: 250px;
-  padding: 10px;
+  padding: 5px;
+  margin: 20px;
   align-items: center;
   justify-content: space-evenly;
   border: 2px solid magenta;
@@ -810,11 +818,20 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .site__footer__colonne {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+}
+
+@media screen and (max-width: 500px) {
+  .site__footer__colonne {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
 }
 
 .site__footer__colonne section {
   display: flex;
+  width: 100%;
   flex-direction: column;
   border: 1px solid #aaa;
   flex: 0 0 30%;
@@ -828,6 +845,7 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
 
 .site__footer__ligne .footer__menu__nav__ul {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   justify-content: center;
 }
