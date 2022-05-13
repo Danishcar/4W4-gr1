@@ -1,0 +1,26 @@
+@keyframes hover-ombre {
+    0% {
+        transform: scale(1.2);
+        box-shadow: none;
+    }
+    50% {
+        transform: scale(0.9);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, .4);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 2.5px 2.5px 5px rgba(0, 0, 0, .5);
+    }
+}
+
+@keyframes brasser {
+    0% { 
+        transform: scale(1); 
+    }
+    50% { 
+        transform: scale(1.2); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}

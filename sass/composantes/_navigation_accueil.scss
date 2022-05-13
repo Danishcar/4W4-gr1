@@ -1,6 +1,7 @@
 .departement__menu, .evenement__menu {
     // nav
 
+
     .menu {
         //ul
         display : flex;
@@ -45,6 +46,10 @@
             border: 2px solid magenta;
             background-color: darkblue;
             border-radius: 5% 5% 5% 5%;
+
+            &:hover{
+                animation: hover-ombre .5s forwards;
+            }
 
             a {
                 display : flex;

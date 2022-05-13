@@ -39,6 +39,8 @@
          
             &:hover {
                 background-color: $color__background-link-hover;
+                border: 1px solid whitesmoke;
+                animation: brasser 1s ease-in-out;
             }
         }
     }
