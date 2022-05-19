@@ -14,10 +14,14 @@
           <?php if (have_posts()): the_post(); ?>
           <h1><?php the_title() ?></h1>
 
+
+          <h2>Description de l'atelier</h2>
           <p class="atelier__description">
-               Description de l'atelier: <?php the_field('description'); ?>
+             <?php the_field('description'); ?>
          </p>
 
+
+          <h2>Infos suplémentaire sur l'atelier</h2>
           <p class="atelier__animateur">
                Animateur de l'atelier: <?php the_field('animateur'); ?>
           </p>
