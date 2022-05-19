@@ -24,3 +24,17 @@
         transform: scale(1); 
     }
 }
+
+@keyframes apparaitre{
+    from{
+        opacity: 0%;
+    }
+
+    50%{
+        opacity: 50%;
+    }
+
+    to{
+        opacity: 100%;
+    }
+}

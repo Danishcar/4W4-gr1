@@ -1058,6 +1058,10 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.ateliers__menu {
+  animation: apparaitre 5s ease-in-out;
+}
+
 /* ---------------------------------------------------------
 ANIMATION
 --------------------------------------------------------- */
@@ -1270,6 +1274,18 @@ ANIMATION
   }
   100% {
     transform: scale(1);
+  }
+}
+
+@keyframes apparaitre {
+  from {
+    opacity: 0%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  to {
+    opacity: 100%;
   }
 }
 
