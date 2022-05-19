@@ -11,7 +11,6 @@
 
 <main class="site__main">
 <article class="ateliers">
-          <h1>---- Template Ateliers ------</h1>
           <?php if (have_posts()): the_post(); ?>
           <h1><?php the_title() ?></h1>
 
@@ -36,15 +35,15 @@
           </p>
 
           <p class="atelier__heure__debut">
-               Heure de début: <?php the_field('heure_de_debut'); ?>
+               Heure de début: <?php the_field('heure_de_debut'); ?> 
           </p>
 
           <p class="atelier__heure__fin">
-               Heure de fin: <?php the_field('heure_de_fin'); ?>
+               Heure de fin: <?php the_field('heure_de_fin'); ?> 
           </p>
 
           <p class="atelier__duree">
-               Durée de l'atelier <?php the_field('duree'); ?>
+               Durée de l'atelier: <?php the_field('duree'); ?> heures
           </p>
 
           <p class="atelier__local">
