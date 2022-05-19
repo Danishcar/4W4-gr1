@@ -10,46 +10,46 @@
 <?php get_header() ?>
 
 <main class="site__main"></main>
-<article class="evenement">
+<article class="atelier">
           <h1>---- Template Ateliers ------</h1>
           <?php if (have_posts()): the_post(); ?>
           <h1><?php the_title() ?></h1>
 
-          <section class="atelier__description">
-               <?php the_field('description'); ?>
-          </section>
+          <p class="atelier__description">
+               Description de l'atelier: <?php the_field('description'); ?>
+         </p>
 
-          <section class="atelier__animateur">
-               <?php the_field('animateur'); ?>
-          </section>
+          <p class="atelier__animateur">
+               Animateur de l'atelier: <?php the_field('animateur'); ?>
+          </p>
 
-          <section class="atelier__date__debut">
-               <?php the_field('date_de_debut'); ?>
-          </section>
+          <p class="atelier__date__debut">
+               Date de début: <?php the_field('date_de_debut'); ?>
+          </p>
 
-          <section class="atelier__date__fin">
-               <?php the_field('date_de_fin'); ?>
-          </section>
+          <p class="atelier__date__fin">
+               Date de fin: <?php the_field('date_de_fin'); ?>
+          </p>
 
-          <section class="atelier__jours">
-               <?php the_field('jours'); ?>
-          </section>
+          <p class="atelier__jours">
+               Jours de l'atelier: <?php the_field('jours'); ?>
+          </p>
 
-          <section class="atelier__heure__debut">
-               <?php the_field('heure_de_debut'); ?>
-          </section>
+          <p class="atelier__heure__debut">
+               Heure de début: <?php the_field('heure_de_debut'); ?>
+          </p>
 
-          <section class="atelier__heure__fin">
-               <?php the_field('heure_de_fin'); ?>
-          </section>
+          <p class="atelier__heure__fin">
+               Heure de fin: <?php the_field('heure_de_fin'); ?>
+          </p>
 
-          <section class="atelier__duree">
-               <?php the_field('duree'); ?>
-          </section>
+          <p class="atelier__duree">
+               Durée de l'atelier <?php the_field('duree'); ?>
+          </p>
 
-          <section class="atelier__local">
-               <?php the_field('local'); ?>
-          </section>
+          <p class="atelier__local">
+               Local de l'atelier: <?php the_field('local'); ?>
+          </p>
           
      </article>
      <?php endif ?>
