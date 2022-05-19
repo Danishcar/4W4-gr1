@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Tp2 Danishcar Casimir
+theme name: Épreuve Finale Danishcar Casimir
 Author: Danishcar Casimir
 Author URI: https://github.com/Danishcar/4W4-gr1
 Description: Exercice dans le cadre du cours 4W4
@@ -411,17 +411,17 @@ a:hover, a:active {
 
 h1, h2 {
   font-family: "Montserrat", sans-serif;
-  color: rgba(8, 33, 175, 0.938);
+  color: rgba(70, 0, 102, 0.938);
 }
 
 h3, h4 {
   font-family: "Poppins", sans-serif;
-  color: rgba(61, 86, 139, 0.938);
+  color: rgba(140, 3, 182, 0.938);
 }
 
 h5, h6 {
   font-family: "Roboto", sans-serif;
-  color: rgba(68, 92, 173, 0.938);
+  color: rgba(152, 68, 173, 0.938);
 }
 
 p {
@@ -1044,6 +1044,18 @@ Navigation pour la page category.php   boutons de catégorie  groupe-1
   .galerie {
     width: 75%;
   }
+}
+
+.infos_suplementaire {
+  padding: 5%;
+  border: 2px solid magenta;
+  background-color: #6aebde;
+  border-radius: 5% 5% 5% 5%;
+  box-shadow: 5px 5px 5px #036d62;
+}
+
+.infos_suplementaire p {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 /* ---------------------------------------------------------

@@ -20,7 +20,7 @@
              <?php the_field('description'); ?>
          </p>
 
-
+            <div class="infos_suplementaire">
           <h2>Infos suplémentaire sur l'atelier</h2>
           <p class="atelier__animateur">
                Animateur de l'atelier: <?php the_field('animateur'); ?>
@@ -53,6 +53,7 @@
           <p class="atelier__local">
                Local de l'atelier: <?php the_field('local'); ?>
           </p>
+          </div>
           
      </article>
      <?php endif ?>
