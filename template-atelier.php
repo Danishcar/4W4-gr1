@@ -9,8 +9,8 @@
 
 <?php get_header() ?>
 
-<main class="site__main"></main>
-<article class="atelier">
+<main class="site__main">
+<article class="ateliers">
           <h1>---- Template Ateliers ------</h1>
           <?php if (have_posts()): the_post(); ?>
           <h1><?php the_title() ?></h1>
